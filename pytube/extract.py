@@ -168,6 +168,7 @@ def channel_name(url: str) -> str:
         YouTube channel name.
     """
     patterns = [
+        r"(?:\/(@[%\d\w_\-]+)()(\/.*)?)",
         r"(?:\/(c)\/([%\d\w_\-]+)(\/.*)?)",
         r"(?:\/(channel)\/([%\w\d_\-]+)(\/.*)?)",
         r"(?:\/(u)\/([%\d\w_\-]+)(\/.*)?)",
